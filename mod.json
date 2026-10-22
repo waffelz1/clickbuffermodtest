@@ -1,0 +1,30 @@
+{
+	"geode": "4.10.0",
+	"gd": {
+		"win": "2.2074"
+	},
+	"id": "yourname.click-buffer",
+	"name": "Click Buffer",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Forgives clicks that land a few frames early, so hard timings are easier.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"buffer-frames": {
+			"type": "int",
+			"name": "Buffer frames",
+			"description": "How many physics frames an early click stays queued.",
+			"default": 3,
+			"min": 1,
+			"max": 15,
+			"control": {
+				"slider": true,
+				"input": true
+			}
+		}
+	}
+}
